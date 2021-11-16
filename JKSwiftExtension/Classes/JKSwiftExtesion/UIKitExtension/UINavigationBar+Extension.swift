@@ -25,6 +25,7 @@ public extension UINavigationBar {
     // MARK: 1.2、改变StateBar的颜色
     /// 改变StateBar的颜色
     /// - Parameter backgroundColor: StateBar的颜色
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     func changeStateBarBackgroundColor(_ backgroundColor: UIColor) {
         if self.customView == nil {
             self.customView = UIView(frame: CGRect(x: 0, y: -jk_kStatusBarFrameH, width: UIScreen.jk.width, height: jk_kStatusBarFrameH))

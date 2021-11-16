@@ -48,6 +48,7 @@ public extension UIAlertController {
     
     // MARK: 1.4、跳转 UIAlertController
     /// UIAlertController
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     func show() {
         UIApplication.shared.keyWindow?.rootViewController?.present(self, animated: true, completion: nil)
     }
@@ -57,6 +58,7 @@ public extension UIAlertController {
     /// - Parameters:
     ///   - vc: 控制器
     ///   - deadline: 多长时间自动返回
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     func show(_ vc: UIViewController? = UIViewController.jk.topViewController(), dismiss deadline: TimeInterval? = nil) {
         guard let inVC = vc else {
             return

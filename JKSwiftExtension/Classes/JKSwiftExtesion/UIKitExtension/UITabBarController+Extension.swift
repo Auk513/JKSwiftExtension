@@ -11,6 +11,7 @@ import Foundation
 public extension JKPOP where Base: UITabBarController {
     // MARK: 1.1、当前选择索引
     /// 当前选择索引
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     static var selectedIdx: Int {
         guard let keyWindow = UIApplication.shared.keyWindow,
               let rootController = keyWindow.rootViewController as? UITabBarController else { return 0}

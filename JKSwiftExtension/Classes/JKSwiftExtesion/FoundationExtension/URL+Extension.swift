@@ -32,6 +32,7 @@ public extension JKPOP where Base == URL {
     // MARK: 1.3、检测应用是否能打开这个URL实例
     /// 1.3、检测应用是否能打开这个URL实例
     /// - Returns: 结果
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     func verifyUrl() -> Bool {
         return UIApplication.shared.canOpenURL(self.base)
     }

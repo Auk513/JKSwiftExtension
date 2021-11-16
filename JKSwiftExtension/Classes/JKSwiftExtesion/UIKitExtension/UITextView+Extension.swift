@@ -150,6 +150,7 @@ public extension JKPOP where Base: UITextView {
     
     // MARK: 2.2、转换特殊符号标签字段
     /// 转换特殊符号标签字段
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     func resolveHashTags() {
         let nsText: NSString = self.base.text! as NSString
         // 使用默认设置的字体样式

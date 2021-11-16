@@ -1235,6 +1235,7 @@ extension JKPOP where Base: ExpressibleByStringLiteral {
     // MARK: 9.18、验证URL格式是否正确
     /// 验证URL格式是否正确
     /// - Returns: 结果
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     public func verifyUrl() -> Bool {
         // 创建NSURL实例
         if let url = URL(string: (base as! String)) {

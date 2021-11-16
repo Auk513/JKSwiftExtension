@@ -135,6 +135,7 @@ public let jk_kScreenW: CGFloat = UIScreen.main.bounds.width
 public let jk_kScreenH: CGFloat = UIScreen.main.bounds.height
 // MARK: 2.3、获取statusBar的高度
 /// 获取statusBar的高度
+@available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
 public var jk_kStatusBarFrameH: CGFloat {
     guard isIPhoneX else {
         return 20
@@ -144,6 +145,7 @@ public var jk_kStatusBarFrameH: CGFloat {
 }
 // MARK: 2.4、获取导航栏的高度
 /// 获取导航栏的高度
+@available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
 public let jk_kNavFrameH: CGFloat = 44 + jk_kStatusBarFrameH
     
 // MARK: 2.5、屏幕底部Tabbar高度

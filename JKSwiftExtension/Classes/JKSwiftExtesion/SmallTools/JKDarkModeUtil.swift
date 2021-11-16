@@ -75,6 +75,7 @@ public extension JKDarkModeUtil {
     
     // MARK: 初始化的调用
     /// 默认设置
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     static func defaultDark() {
         if #available(iOS 13.0, *) {
             // 默认跟随系统暗黑模式开启监听
@@ -87,6 +88,7 @@ public extension JKDarkModeUtil {
     }
     
     // MARK: 设置系统是否跟随
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     static func setDarkModeFollowSystem(isFollowSystem: Bool) {
         if #available(iOS 13.0, *) {
             // 1.1、设置是否跟随系统
@@ -104,6 +106,7 @@ public extension JKDarkModeUtil {
     }
     
     // MARK: 设置：浅色 / 深色
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     static func setDarkModeCustom(isLight: Bool) {
         if #available(iOS 13.0, *) {
             // 1.1、只要设置了模式：就是黑或者白
@@ -125,6 +128,7 @@ public extension JKDarkModeUtil {
     // MARK: 设置：智能换肤
     /// 智能换肤
     /// - Parameter isSmartPeeling: 是否智能换肤
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     static func setSmartPeelingDarkMode(isSmartPeeling: Bool) {
         if #available(iOS 13.0, *) {
             // 1.1、设置智能换肤
@@ -147,6 +151,7 @@ public extension JKDarkModeUtil {
     
     // MARK: 智能换肤时间选择后
     /// 智能换肤时间选择后
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     static func setSmartPeelingTimeChange(startTime: String, endTime: String) {
         
         /// 是否是浅色

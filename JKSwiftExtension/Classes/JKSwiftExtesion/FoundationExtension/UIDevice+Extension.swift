@@ -319,6 +319,7 @@ public extension JKPOP where Base: UIDevice {
     // MARK: 2.11、当前设备能否打电话
     /// 当前设备能否打电话
     /// - Returns: 结果
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     static func isCanCallTel() -> Bool {
         if let url = URL(string: "tel://") {
             return UIApplication.shared.canOpenURL(url)

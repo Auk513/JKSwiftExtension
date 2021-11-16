@@ -14,6 +14,7 @@ public struct JKGlobalTools {
     // MARK: 1.1、拨打电话
     /// 拨打电话的才处理
     /// - Parameter phoneNumber: 电话号码
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     public static func callPhone(phoneNumber: String, complete: @escaping ((Bool) -> Void)) {
         // 注意: 跳转之前, 可以使用 canOpenURL: 判断是否可以跳转
         guard let phoneNumberEncoding = ("tel://" + phoneNumber).addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed), let url = URL(string: phoneNumberEncoding), UIApplication.shared.canOpenURL(url) else {
@@ -127,6 +128,7 @@ public struct JKGlobalTools {
     // MARK: 1.6、前往App Store进行评价
     /// 前往App Store进行评价
     /// - Parameter appid: App的 ID，在app创建的时候生成的
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     public static func evaluationInAppStore(appid: String) {
         let urlString = "https://itunes.apple.com/cn/app/id" + appid + "?mt=12"
         guard let url = URL(string: urlString), UIApplication.shared.canOpenURL(url) else {
@@ -138,6 +140,7 @@ public struct JKGlobalTools {
     }
     
     // MARK: 1.7、跳转URL
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     public static func openUrl(url: URL, complete: @escaping ((Bool) -> Void)) {
         // iOS 10.0 以前
         guard #available(iOS 10.0, *)  else {
@@ -210,6 +213,7 @@ public struct JKGlobalTools {
     
     // MARK: 1.9、打开设置界面
     /// 打开设置界面
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     public static func openSetting() {
         // 设置
         guard let url = URL(string: UIApplication.openSettingsURLString) else {

@@ -14,6 +14,7 @@ public extension JKPOP where Base: UIApplication {
     
     // MARK: 1.1、获取屏幕的方向
     /// 获取屏幕的方向
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     static var screenOrientation: UIInterfaceOrientation {
         return UIApplication.shared.statusBarOrientation
     }
@@ -22,6 +23,7 @@ public extension JKPOP where Base: UIApplication {
     /// 获取根控制器
     /// - Parameter base: 哪个控制器为基准
     /// - Returns: 返回 UIViewController
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     static func topViewController(_ base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
         if let nav = base as? UINavigationController {
             return topViewController(nav.visibleViewController)
@@ -77,6 +79,7 @@ public extension JKPOP where Base: UIApplication {
     
     // MARK: 1.6、消息推送是否可用
     /// 消息推送是否可用
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     static func hasRightOfPush() -> Bool {
         let notOpen = UIApplication.shared.currentUserNotificationSettings?.types == UIUserNotificationType(rawValue: 0)
         return !notOpen
@@ -84,6 +87,7 @@ public extension JKPOP where Base: UIApplication {
     
     // MARK: 1.7、注册APNs远程推送
     /// 注册APNs远程推送
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     static func registerAPNsWithDelegate(_ delegate: Any) {
         if #available(iOS 10.0, *) {
             let options: UNAuthorizationOptions = [.alert, .badge, .sound]
@@ -282,7 +286,8 @@ public enum JKThirdPartyAppType: String {
     /// 下厨房
     case xcfapp = " xcfapp://"
 }
- 
+
+@available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
 public extension JKPOP where Base: UIApplication {
     // MARK: 打开系统app
     /// 打开系统app

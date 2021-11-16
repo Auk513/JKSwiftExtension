@@ -15,6 +15,7 @@ public extension KeyboardAccessoryDelegate {
     func keyboardAccessoryDone() {}
 }
 
+@available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
 public class KeyboardAccessory: UIView {
     public weak var delegate: KeyboardAccessoryDelegate?
     public var doneBtn: UIButton = {
@@ -33,6 +34,7 @@ public class KeyboardAccessory: UIView {
         line.addTo(self)
     }
     
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     @objc func done() {
         if let _delegate = delegate {
             _delegate.keyboardAccessoryDone()

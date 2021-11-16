@@ -39,6 +39,7 @@ public extension JKPOP where Base: UIViewController {
     // MARK: 1.3、获取顶部控制器(类方法)
     /// 获取顶部控制器
     /// - Returns: VC
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     static func topViewController() -> UIViewController? {
         guard let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first, let rootVC = window.rootViewController  else {
             return nil
@@ -49,6 +50,7 @@ public extension JKPOP where Base: UIViewController {
     // MARK: 1.4、获取顶部控制器(实例方法)
     /// 获取顶部控制器
     /// - Returns: VC
+    @available(iOSApplicationExtension, unavailable, message: "This method is NS_EXTENSION_UNAVAILABLE.")
     func topViewController() -> UIViewController? {
         guard let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first, let rootVC = window.rootViewController  else {
             return nil
